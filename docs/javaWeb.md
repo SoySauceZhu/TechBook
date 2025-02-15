@@ -41,3 +41,8 @@ public class DatabaseConnection {
 | **Application**     | 1 for entire app         | Shared configuration, global objects         |
 
 
+## Debug Tip:
+RESTful controller will map the URI request to create a response body. During the process, getter and setter methods of entities will be invoked. 
+
+Therefore, if error `Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: No acceptable representation]`. The problem might due to `@Data` annotation missing or not compiled properly.
+ 
