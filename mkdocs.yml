@@ -53,9 +53,9 @@ extra:
 
 
 nav:
-- Welcome: index.md
-- Java Basic: javaBasic.md
+# - Welcome: index.md
 - Java Web: javaWeb.md
+- Java Basic: javaBasic.md
 
 
 extra_css:
