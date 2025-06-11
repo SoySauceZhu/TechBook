@@ -203,3 +203,28 @@ Application will use proxy object and execute methods in the proxy object,
 instead of target object. Proxy object encapsulates target object logic into AOP logic (Advice methods).
 
 
+
+
+## Data Class
+
+A POJO is a simple Java object that follows standard Java conventions:
+
+It contains fields (variables), getters and setters, and sometimes constructors.
+It doesn’t have business logic, just holds data.
+It should not extend a specific class or implement an interface (except for Serializable in some cases).
+Used throughout the application for general-purpose data storage.
+
+
+
+A DTO is used to transfer data between different layers (e.g., from the service layer to the controller layer, or backend to frontend). DTOs help:
+
+Reduce unnecessary data exposure.
+Improve performance by sending only required fields.
+Prevent unnecessary coupling between different layers.
+
+
+A VO (Value Object) is an immutable object that represents a value or concept with no identity. Unlike DTOs and POJOs, VOs:
+
+Are immutable (no setters).
+Are equal by value, not by reference (use equals() and hashCode() methods).
+Do not have an ID (not meant to be stored in a database).
