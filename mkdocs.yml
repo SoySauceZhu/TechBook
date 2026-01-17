@@ -59,6 +59,7 @@ nav:
 - Introduction to AI: aiIntro.md
 - SpringMVC: SpringMVC.md
 - Architecture: architecture.md
+- Notebook: notebook.md
 
 
 extra_css:
